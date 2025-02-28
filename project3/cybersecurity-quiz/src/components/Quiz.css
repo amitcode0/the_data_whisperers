@@ -1,126 +1,161 @@
-/* General Styles */
+/* General Styling */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1e1e2f;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
   color: white;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 /* Navigation Bar */
 nav {
-  background-color: #29293d;
-  padding: 15px;
+  background-color: #1e1e1e;
+  padding: 10px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
+  position: fixed;
+  top: 0;
 }
 
 nav button {
-  background-color: #ff4c4c;
+  background-color: #ff1744;
   color: white;
   border: none;
   padding: 10px 15px;
-  font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 5px;
 }
 
 nav button:hover {
-  background-color: #ff6666;
+  background-color: #ff5252;
 }
 
-/* Authentication Container */
+/* Authentication Containers */
 #auth-container, #signup-container {
-  background-color: #2a2a40;
-  padding: 30px;
-  width: 300px;
-  margin: 50px auto;
+  background-color: #222;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 10px rgba(255, 23, 68, 0.3);
+  margin-top: 60px;
 }
 
-#auth-container h2, #signup-container h2 {
-  margin-bottom: 15px;
+h2 {
+  color: #ff1744;
 }
 
-#auth-container button, #signup-container button {
-  background-color: #ff4c4c;
+button {
+  background-color: #ff1744;
   color: white;
   border: none;
   padding: 10px 15px;
-  font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
   border-radius: 5px;
-}
-
-#auth-container button:hover, #signup-container button:hover {
-  background-color: #ff6666;
-}
-
-#auth-container p, #signup-container p {
-  margin-top: 10px;
-}
-
-#auth-container span, #signup-container span {
-  color: #ff4c4c;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* Main Content */
-#main-content {
-  margin-top: 20px;
-}
-
-.game-section {
-  display: none;
-  background-color: #33334d;
-  padding: 20px;
-  border-radius: 8px;
-  width: 350px;
-  margin: 20px auto;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
-}
-
-.game-section h2 {
-  margin-bottom: 10px;
-}
-
-.game-section button {
-  background-color: #ff4c4c;
-  color: white;
-  border: none;
-  padding: 10px;
-  font-size: 14px;
   margin: 10px;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
-.game-section button:hover {
-  background-color: #ff6666;
+button:hover {
+  background-color: #ff5252;
+}
+
+/* Game Sections */
+.game-section {
+  background-color: #222;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 23, 68, 0.3);
+  width: 80%;
+  max-width: 400px;
 }
 
 /* Input Fields */
-input[type="password"] {
-  padding: 8px;
-  font-size: 16px;
+input {
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+  border: 1px solid #ff1744;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-top: 10px;
+  text-align: center;
 }
 
-/* Results */
-#phishing-result, #password-strength, #attack-result, 
-#breach-container, #firewall-container {
+/* Messages */
+#phishing-result, #password-strength, #attack-result, #breach-container, #firewall-container {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 15px;
+  color: #ffcc00;
+}
+.container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hide Sections Initially */
-.hide {
-  display: none;
+h2 {
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.strength {
+  font-weight: bold;
+}
+
+.weak {
+  color: red;
+}
+
+.medium {
+  color: orange;
+}
+
+.strong {
+  color: green;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.generated-password {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 4px;
+  font-size: 16px;
+  word-break: break-all;
 }
