@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./Attack.css";
 
 const commonPasswords = [
   "123456",
