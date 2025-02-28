@@ -1,161 +1,93 @@
-/* General Styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-/* Navigation Bar */
-nav {
-  background-color: #1e1e1e;
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  position: fixed;
-  top: 0;
-}
-
-nav button {
-  background-color: #ff1744;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 5px;
-}
-
-nav button:hover {
-  background-color: #ff5252;
-}
-
-/* Authentication Containers */
-#auth-container, #signup-container {
-  background-color: #222;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(255, 23, 68, 0.3);
-  margin-top: 60px;
-}
-
-h2 {
-  color: #ff1744;
-}
-
-button {
-  background-color: #ff1744;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 5px;
-  margin: 10px;
-}
-
-button:hover {
-  background-color: #ff5252;
-}
-
-/* Game Sections */
-.game-section {
-  background-color: #222;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(255, 23, 68, 0.3);
-  width: 80%;
-  max-width: 400px;
-}
-
-/* Input Fields */
-input {
-  padding: 10px;
-  width: 80%;
-  margin-top: 10px;
-  border: 1px solid #ff1744;
-  border-radius: 5px;
-  text-align: center;
-}
-
-/* Messages */
-#phishing-result, #password-strength, #attack-result, #breach-container, #firewall-container {
-  font-weight: bold;
-  margin-top: 15px;
-  color: #ffcc00;
-}
+/* Cyberpunk Password Checker Styling */
 .container {
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
   text-align: center;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  background: #0a192f;
+  box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.3);
+  border: 2px solid rgba(0, 255, 255, 0.5);
 }
 
 h2 {
-  color: #333;
+  color: #00ffff;
+  font-size: 1.8rem;
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
 }
 
+/* Input Field */
 input {
-  width: 100%;
-  padding: 10px;
+  width: 90%;
+  padding: 12px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 5px;
   font-size: 16px;
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 0px 8px rgba(0, 255, 255, 0.5);
 }
 
+input:focus {
+  outline: none;
+  border-color: #ff007f;
+  box-shadow: 0px 0px 12px rgba(255, 0, 127, 0.8);
+}
+
+/* Strength Indicator */
 .strength {
   font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .weak {
   color: red;
+  text-shadow: 0px 0px 10px red;
 }
 
 .medium {
   color: orange;
+  text-shadow: 0px 0px 10px orange;
 }
 
 .strong {
-  color: green;
+  color: #00ff00;
+  text-shadow: 0px 0px 10px #00ff00;
 }
 
+/* Buttons */
 button {
-  padding: 10px 15px;
+  padding: 12px 20px;
   border: none;
-  background: #007bff;
-  color: #fff;
+  background: #ff007f;
+  color: white;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(255, 0, 127, 0.5);
 }
 
 button:hover {
-  background: #0056b3;
+  background: #ff1493;
+  box-shadow: 0px 0px 15px rgba(255, 20, 147, 0.8);
 }
 
+/* Generated Password Display */
 .generated-password {
-  margin-top: 10px;
+  margin-top: 15px;
   padding: 10px;
-  background: #f4f4f4;
-  border-radius: 4px;
+  background: #1e1e1e;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 5px;
   font-size: 16px;
-  word-break: break-all;
+  color: #00ffff;
+  word-break: break-word;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
 }

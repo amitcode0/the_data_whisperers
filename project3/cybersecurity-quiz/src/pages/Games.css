@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Container */
+  .games-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
+  }
+  
+  /* Heading */
+  h1 {
+    color: #00ffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Quiz Buttons */
+  .quiz-button {
+    background-color: #ff1744;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .quiz-button:hover {
+    background-color: #ff5252;
+    box-shadow: 0 0 10px #ff5252;
+  }
+  
+  /* Quiz Content */
+  .quiz-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 23, 68, 0.3);
+  }
+  
+  /* Phishing Detection Styles */
+  .phishing-container {
+    background: #0a192f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
+    margin-top: 20px;
+  }
+  
+  .phishing-container h2 {
+    color: #00ffff;
+    font-size: 1.5rem;
+  }
+  
+  .phishing-input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .check-button {
+    background-color: #00ffff;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .check-button:hover {
+    background-color: #ff007f;
+    color: white;
+    box-shadow: 0 0 10px #ff007f;
+  }
+  
+  /* Phishing Result */
+  .phishing-result {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  /* Safe Link */
+  .safe {
+    color: green;
+  }
+  
+  /* Phishing Alert */
+  .phishing {
+    color: red;
+    text-shadow: 0 0 8px red;
+  }
+  
