@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import Quiz from "../components/Quiz";
 import CyberQuiz from "../components/CyberQuiz";
-import PhishingDetector from "../components/Phishing"; // Importing the Phishing detector
-import Attack from "../components/Attack"; // Importing the Attack simulation component
+import PhishingDetector from "../components/Phishing";
+import Attack from "../components/Attack";
+import TwoFA from "../components/TwoFA"; // Importing 2FA Component
 
 const Games = () => {
   const [selectedQuiz, setSelectedQuiz] = useState("cyber");
 
   return (
     <div className="games-container">
-      <h1>Cybersecurity & General Quizzes</h1>
+      <h1>Cybersecurity Challenges & Quizzes</h1>
 
       <div className="button-container">
         <button
@@ -36,6 +37,9 @@ const Games = () => {
         >
           Simulate Attack
         </button>
+        <button onClick={() => setSelectedQuiz("2fa")} className="quiz-button">
+          2FA Challenge
+        </button>
       </div>
 
       <div className="quiz-content">
@@ -45,8 +49,10 @@ const Games = () => {
           <Quiz />
         ) : selectedQuiz === "phishing" ? (
           <PhishingDetector />
-        ) : (
+        ) : selectedQuiz === "attack" ? (
           <Attack />
+        ) : (
+          <TwoFA />
         )}
       </div>
     </div>
